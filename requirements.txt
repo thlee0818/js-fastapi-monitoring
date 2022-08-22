@@ -6,3 +6,4 @@ pydantic==1.6.2
 scikit-learn==0.24.0
 uvicorn==0.13.2
 pypmml==0.9.16
+py4j==0.10.9
