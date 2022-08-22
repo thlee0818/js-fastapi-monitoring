@@ -7,7 +7,7 @@ import pandas as pd
 # from sklearn.experimental import enable_hist_gradient_boosting  # noqa
 # from sklearn.ensemble import HistGradientBoostingRegressor
 # from sklearn.metrics import mean_squared_error
-from sklearn.model_selection import train_test_split
+# from sklearn.model_selection import train_test_split
 
 from sklearn.tree import DecisionTreeClassifier
 from sklearn2pmml.pipeline import PMMLPipeline
@@ -15,15 +15,15 @@ from sklearn2pmml import sklearn2pmml
 
 logger = logging.getLogger(__name__)
 
-def prepare_dataset(test_size=0.2, random_seed=1):
-    dataset = pd.read_csv(
-        "winequality-red.csv",
-        delimiter=",",
-    )
-    dataset = dataset.rename(columns=lambda x: x.lower().replace(" ", "_"))
-    train_df, test_df = train_test_split(dataset, test_size=test_size, 
-                        random_state=random_seed)
-    return {"train": train_df, "test": test_df}
+# def prepare_dataset(test_size=0.2, random_seed=1):
+#     dataset = pd.read_csv(
+#         "winequality-red.csv",
+#         delimiter=",",
+#     )
+#     dataset = dataset.rename(columns=lambda x: x.lower().replace(" ", "_"))
+#     train_df, test_df = train_test_split(dataset, test_size=test_size, 
+#                         random_state=random_seed)
+#     return {"train": train_df, "test": test_df}
 
 # def train():
 #     logger.info("Preparing dataset...")
