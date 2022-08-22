@@ -12,7 +12,7 @@ ROOT_DIR = Path(__file__).parent.parent
 app = FastAPI()
 # scaler = load(ROOT_DIR / "artifacts/scaler.joblib")
 # model = load(ROOT_DIR / "artifacts/model.joblib")
-moodel  = Model.fromFile(ROOT_DIR / "DecisionTreeIris.pmml")
+moodel  = Model.fromFile("../DecisionTreeIris.pmml")
 
 @app.get("/")
 def root():
