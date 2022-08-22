@@ -13,7 +13,7 @@ app = FastAPI()
 # scaler = load(ROOT_DIR / "artifacts/scaler.joblib")
 # model = load(ROOT_DIR / "artifacts/model.joblib")
 # Model.fromFile()
-model  = Model.load("../DecisionTreeIris.pmml")
+model  = Model.load("DecisionTreeIris.pmml")
 
 @app.get("/")
 def root():
