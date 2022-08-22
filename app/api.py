@@ -3,7 +3,8 @@ import numpy as np
 from fastapi import FastAPI, Response
 from joblib import load
 from pypmml import Model
-from .schemas import Wine, Rating, feature_names
+# from .schemas import Wine, Rating, feature_names
+from .schemas import Iris, Rating, feature_names
 # from .monitoring import instrumentator
 
 ROOT_DIR = Path(__file__).parent.parent
